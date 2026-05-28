@@ -1,3 +1,5 @@
+import profileImage from '../assets/img/profile.jpeg'
+
 export default function Sidebar({ activeSection }) {
   const sections = [
     { id: 'about', label: 'About' },
@@ -17,7 +19,7 @@ export default function Sidebar({ activeSection }) {
     <nav id="sideNav">
       <div className="navbar-brand">
         <span className="d-lg-none brand-name">Chih-Yun Pai</span>
-        <img src="/assets/img/profile.jpeg" alt="Chih-Yun Pai" className="img-profile" />
+        <img src={profileImage} alt="Chih-Yun Pai" className="img-profile" />
       </div>
       <ul className="navbar-nav">
         {sections.map((section) => (
